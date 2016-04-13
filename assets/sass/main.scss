@@ -1,0 +1,119 @@
+@import "./helpers/_variables";
+@import "./layouts/_header";
+@import "./layouts/_footer";
+.container{
+	width: 100%;
+}
+hr.principal {
+	border-top: 3px solid $blck;
+    width: 57px;
+    margin-left: 0;
+} 
+
+/*BG-home*/
+.hero {
+	background-image: url("../images/home4.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.trans {
+	background-color:rgba(0,0,0,0.5);
+}
+.banner {
+	padding: 20% 0 15%;
+    color: $white;
+}
+/*services*/
+.services {
+	margin: 5% 0 5%;
+	}	
+/*team*/
+.team {
+	margin: 5% 0 5%;
+		img {
+	width:100%;
+}
+}
+.bloques {
+	padding-top: 10%;
+}
+/*studio*/
+.studio {
+	background-image: url("../images/bg3.jpg");
+	background-size: cover;
+	background-repeat-x: initial;
+    background-position-y: 439px;
+    hr {
+    	border-top: 3px solid $white;
+    }
+}
+.pstudio {
+	padding: 9% 0 3%;
+	iframe {
+	width: 100%;
+	height: 100%;
+	}
+}
+.textestudio {
+	padding: 10% 0 10%;
+	color: $white;
+}
+
+/*ourt Best*/
+.price {
+	h2 {
+		color: #636363;
+	}
+	.big {
+		font-size: 50px;
+		font-height: bold;
+	}
+}
+.cabeza {
+	padding: 7% 0;
+	border-bottom: solid 1px $gris2;
+}
+.icons {
+	border-bottom: solid 1px $gris2;
+}
+.dere {
+	border-left: solid 1px $gris2;
+}
+.box {
+	img {
+		padding: 10%;
+	}
+	p {
+		padding: 10%;
+	}
+}
+.negro {
+	padding: 4% 0;
+	background-color:#000;
+	color: $white;
+	font-height: bold;
+}
+/*contact us*/
+.contac {
+	padding: 5% 0;
+}
+.side {
+	padding-top: 5%;
+	h5{
+		small{
+			font-size: 15px;
+		}
+	}
+}
+.form-control {
+	margin-bottom: 2%;
+}
+.mensaje {
+	height: 90px;
+}
+.btn.btn-default {
+	background-color:#444444;
+	color: #fff;
+	padding: 1% 2%;
+	border-radius: none;
+}

@@ -1,0 +1,177 @@
+include mixin
+doctype html
+html(lang='es-PE')
+	head
+	meta(charset='UTF-8')
+	title Home
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
+	link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
+	link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+	link(rel='stylesheet', type='text/css', href='fonts/css/font-awesome.min.css')
+	link(rel='stylesheet', type='text/css', href='assets/css/bootstrap.css')
+	link(rel='stylesheet', type='text/css', href='assets/css/elegant.css')
+	link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+	link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=Raleway:40,100.200,300,400,500,700,800,900')
+	script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+	script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+	script(type='text/javascript', src='assets/js/bootstrap.min.js')
+	script(type="text/javascript" src="assets/javascript/jquery.min.js")
+	script(type="text/javascript" src="assets/javascript/app.js")
+body
+	include mixin.jade
+	div#home.hero.text-white
+		div.trans
+			header
+				nav.navbar.navbar-default
+					div.container
+						div.navbar-header
+							button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+								span.sr-only Toggle navigation
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+							a.navbar-brand(href="#")
+								img(src="assets/images/w-logo.jpg")
+						div.collapse.navbar-collapse#bs-example-navbar-collapse-1
+							ul.nav.navbar-nav.navbar-right
+								li
+									a(href="index.html#home")
+										strong HOME
+								li
+									a(onclick="scrollWin()" href="index.html#services")
+										strong SERVICES
+								li
+									a(href="index.html#about")
+										strong ABOUT
+								li
+									a(href="index.html#portafolio")
+										strong PORTAFOLIO
+								li
+									a(href="index.html#team")
+										strong TEAM
+								li
+									a(href="index.html#testimonial")
+										strong TESTIMONIAL
+								li
+									a(href="index.html#pricing")
+										strong PRICING
+								li
+									a(href="index.html#contact")
+										strong CONTACT
+			div.banner.text-center.container
+				h1 
+					strong Stand Out Fron The Crowd
+				p For photogrhapher and frelance who want to exclusively showcase their products
+	div#services.container.services
+		.col-md-7
+			img(src="assets/images/p15.jpg")
+		.col-md-5
+			h2 Services We Privide
+			hr.principal
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, seiusmodtempor incididunt ut labore et dolore magna aliqua.it amet, consectetur adipisicing elit, seiusmodtempor incididunt ut labore et dolore magna aliqua.
+
+			+services("assets/images/online-store15.png","PSD TEMPLATE DESING","Lorem ipsum dolor sit amet, consectetur adipisicing elit, seiusmodtempor incididunt ut labore et dolore magna aliqua.")
+
+			+services("assets/images/mug16.png","GRAPHICS DESING","Lorem ipsum dolor sit amet, consectetur adipisicing elit, seiusmodtempor incididunt ut labore et dolore magna aliqua.")
+
+			+services("assets/images/photography88.png","PHOTOGRAPHY","Lorem ipsum dolor sit amet, consectetur adipisicing elit, seiusmodtempor incididunt ut labore et dolore magna aliqua.")
+	
+	div#about.studio
+			.trans
+				.container
+					.row.pstudio
+						.col-md-5.textestudio
+							h2 Welcome To W Studio
+							hr.principal
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+						.col-md-7
+							iframe(src="assets/images/video.mp4")
+	div#team.team.container
+		.row
+			h1 Meet The Team
+			hr.principal
+		.row
+			+team("assets/images/member7.jpg","NETHANEL GILROY","Funder & CEO","Sed metus eros. Duis aute irure dolor in reprehenderit in voluptate velit esse. Duis aute irure dolor in reprehenderit in voluptate velit esse.")
+			+team("assets/images/member8.jpg","NAREK ROUBEN","Funder & CEO","Sed metus eros. Duis aute irure dolor in reprehenderit in voluptate velit esse. Duis aute irure dolor in reprehenderit in voluptate velit esse.")
+
+		.row
+			+teaminverse("assets/images/member9.jpg","SANMANTHA MILNER","Funder & CEO","Sed metus eros. Duis aute irure dolor in reprehenderit in voluptate velit esse. Duis aute irure dolor in reprehenderit in voluptate velit esse.")
+			+teaminverse("assets/images/member10.jpg","LOUISE ALASTRIONA","Funder & CEO","Sed metus eros. Duis aute irure dolor in reprehenderit in voluptate velit esse. Duis aute irure dolor in reprehenderit in voluptate velit esse.")
+
+	div#pricing.ourbest.contaioner
+		.row
+			+precios
+			+precios
+			+precios
+			+precios
+	div#contact.contac
+		.row
+			.col-md-9
+				h2 Contact US
+				hr.principal
+				p irure dolor in reprehenderit in voluptate velit esse. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+				form.form-horizontal(role="form")
+					.form-group
+						.col-lg-10
+							input.form-control#nombre(type="name" placeholder="Nombre*")
+					.form-group
+						.col-lg-10
+							input.form-control#nombre(type="name" placeholder="Email*")
+					.form-group
+						.col-lg-10
+							input.form-control#nombre(type="name" placeholder="Subjet")
+					.form-group
+						.col-lg-10
+							input.form-control.mensaje#sms(type="name" placeholder="Message*")
+
+					button.btn.btn-default(type="submit") Submit
+
+			.col-md-3.side
+				h5 
+					strong CONTACT INFO
+					p 1544 19th St.
+					Santa Monica, CA 90404
+				h5 
+					strong EMAIL: 
+					small yourmail@hourdomain.com
+				h5 
+					strong PHONE: 
+					small +88(0) 101 0000 000
+				h5 
+					strong FAX: 
+					small +88(0) 202 0000 000
+				
+				h5
+					strong CONNECT WITH US
+
+				p 
+					strong Our Company Mission 
+					hr
+				p 
+					strong Our Company Mission 
+					hr
+				p 
+					strong Our Company Mission 
+					hr
+
+	
+	.footer.fond-griss
+		.row
+			.col-md-4
+				img(src="assets/images/w-logo.jpg")
+			.col-md-4
+				div.text-center
+					p COPYRIGHT 2016 WILY LAB LIMITED
+					p DESIGED AND DEVELOPED BY WILYLAB
+
+	
+
+
+
+
+
+
+
+
+
+		

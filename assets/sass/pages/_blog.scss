@@ -1,0 +1,97 @@
+@import "../helpers/_variables";
+@import "../helpers/_mixinsol";
+.container {
+	width: 950px;
+	.butitulo {
+		padding-left: 1%;
+	}
+}
+
+.titulow {
+	h1 {
+		font-family: $titulo1;
+		font-weight: bold;
+	}
+	h5.butitulo {
+		font-family: $titulo2;
+		color: #667885;
+	}
+}
+
+.bloques {
+	padding: 0 2%;
+}
+.borde{
+	border: 2px solid $gris;
+	padding:10px;
+	margin-bottom: 5%;
+	.tema {
+		padding: 10% 0 0%;
+    	height: 110px;
+    	font-family: $titulo1;
+		h4 {
+			font-weight: bold;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+		}
+	}
+}
+.fond-gris {
+	background-color: $gris;
+	padding: 20px 13px;
+	.media-body{
+		@include mediabody;
+	}
+	img {
+		margin-bottom:0px;
+		.thumbnail {
+			border-radius: 0px;
+		}
+	}
+}
+.box {
+	position: relative;
+	z-index: 10;
+
+}
+.box:before, .box:after {
+	position:absolute;
+	content:"";
+	bottom: 8px;
+	left:0px;
+	top:82%;
+	width:53%;
+	background:#777;
+	box-shadow: 0 7px 6px #777;
+	transform:rotate(-15deg);
+	-webkit-transform:rotate(-15deg);
+	-moz-transform:rotate(-15deg);
+	-ms-transform:rotate(-15deg);
+	-o-transform:rotate(-15deg);
+	z-index:-1;
+
+}
+.box:after {
+	transform:rotate(15deg);
+	-webkit-transform:rotate(15deg);
+	-moz-transform:rotate(15deg);
+	-ms-transform:rotate(15deg);
+	-o-transform:rotate(15deg);
+	right: 0px;
+	left: auto;
+}
+/*publicidad*/
+.container {
+	width: 950px;
+}
+.publicidad {
+	position: absolute;
+	padding-top: 4%;
+	.banner1{
+		position: fixed;
+		padding-left: 2%
+	}
+	.banner2{
+		position: fixed;
+		right: 2%;
+	}
+}
+/**/

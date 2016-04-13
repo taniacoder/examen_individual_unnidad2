@@ -1,0 +1,47 @@
+mixin services (imagen,title,article)
+		.media.bloques
+			.media-left.media-middle
+				img.media-object(src=imagen)
+			.media-body
+					h5.media-heading
+						strong=title
+					p=article
+mixin team (imagen,nombre,title,article)
+		.col-md-3
+				img(src=imagen)
+		.col-md-3
+				h5
+					strong=nombre
+				H6=title
+				p=article
+				i.fa.fa-facebook(aria-hidden="true")
+mixin teaminverse (imagen,nombre,title,article)
+		.col-md-3
+				h5
+					strong=nombre
+				H6=title
+				p=article
+		.col-md-3
+				img(src=imagen)
+mixin precios (imagen,nombre,title,article)
+		.col-md-3
+				div.price.fond-griss.text-center
+					div.cabeza
+						h2 started
+						h2.big $50 /mo
+					.row.icons
+						.col-md-6.box
+							img(src="assets/images/man88.png")
+							p 20 USER
+						.col-md-6.box.dere
+							img(src="assets/images/rectangles29.png")
+							p 20 USER
+					.row
+						.col-md-6.box
+							img(src="assets/images/database22.png")
+							p 20 USER
+						.col-md-6.box.dere
+							img(src="assets/images/email162.png")
+							p 20 USER
+					div.negro
+						h5 ORDER NOW

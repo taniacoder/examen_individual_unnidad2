@@ -1,0 +1,35 @@
+/*NAV*/
+header{
+	width: 100%;
+	padding: 0 2%;
+	position: fixed;
+		z-index: 99;
+}
+nav {
+	padding-top: 2%;
+	font-size: 15.3px;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0; 
+}
+.menu_bar{
+padding: 1.5em 2em 0em 2em;
+}
+nav ul li a{
+  padding: 10px 25px !important;
+}
+.navbar{
+  min-height: 80px;
+  background-color: transparent;
+  border: none;
+}
+.navbar-brand {
+	padding: 0px;
+}
+.navbar-default .navbar-nav>li>a {
+	color: $white;
+	&:hover {
+		color: $blck;
+	}
+}
